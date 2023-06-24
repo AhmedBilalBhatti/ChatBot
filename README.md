@@ -55,8 +55,10 @@ Then the graph would be like:
 ![21](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/08a8d969-9790-42ce-9c07-ba8f638e4702)
 * It also contain and make episodic memory day wise as can be viewed in upper example.
 * It contain a ML model to detect Gender
+  
 ![65432](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/11989c70-d74b-48d7-a789-1147e957db7f)
 * It can also give synonym and can define anything it also have ability to web scrape as can be viewed in this pic
+
 ![11](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/b293a5ce-4a34-41c9-aaff-7d9480e9b76b)
 * It can also do analysis on your sentiments and can tell your ziodic sign.
 ![7564](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/659b2990-1494-44fb-90fc-625da8ee4f26)
