@@ -69,4 +69,5 @@ The above are some of the features of my chatbot I have not listed all as this i
 * It can also create a family tree with its technology
 * It can develop its brain by its self only by talking with user.
 * It can keep all the records of all chats.
+
 These are some of the features that came into my mind while writing this report since it is a AI based chatbot it has many more abilities.
