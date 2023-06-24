@@ -1,0 +1,109 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/favicon.ico'%}" rel="icon">
+  <link href="{% static 'images/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendors/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendors/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendors/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendors/glightbox/css/glightbox.min.css'%}'%}" rel="stylesheet">
+  <link href="{% static 'vendors/aos/aos.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/main.css'%}" rel="stylesheet">
+</head>
+<body>
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>About</h2>
+            {% for i in data %}
+            <p>{{i.Maintxt1}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            {% for i in data %}
+            <img src="{{i.img.url}}" class="img-fluid" alt="">
+            {% endfor %}
+          </div>
+          <div class="col-lg-5 content">
+             {% for i in data %}
+            <p class="fst-italic py-3">{{i.Maintxt2}}</p>
+             {% endfor %}
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  {% for i in data %}
+                  <li><i class="bi bi-chevron-right"></i> <strong>Developer:</strong> <span>{{i.p1}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>{{i.p3}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Semester:</strong> <span>{{i.p5}}</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Id:</strong> <span>{{i.p2}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{i.p4}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{i.p6}}</span></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            {% for i in data %}
+            <p class="py-3">{{i.txt1}}</p>
+            <p class="m-0">{{i.txt2}}</p>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendors/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendors/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendors/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendors/aos/aos.js'%}"></script>
+  <script src="{% static 'vendors/php-email-form/validate.js'%}"></script>
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+</html>
+{% endblock content %}

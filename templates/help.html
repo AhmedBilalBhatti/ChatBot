@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>FAQ</title>
+    <style type="text/css">
+      body{
+        background: #0c0c0c;
+        padding-top: 130px;
+        font-family: Sans-serif;
+        background-image: url('/static/images/3.jpg');
+      }
+      .header{
+        border-radius: 10px 10px 10px 10px;
+        padding:10px 0px;
+        background-image: url('r.jpg');
+        color: #ffffff;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item{
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .faq-body{
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper{
+        width: 70%;
+        margin: 0 auto;
+      }
+      .faq-inner{
+        border-radius: 40px 40px 40px 40px;
+        padding: 10px;
+        background: rgb(214, 214, 214);
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height:0.9em;
+        cursor: pointer;
+      }
+      hr{
+        background-color: #9b9b9b;
+      }
+      .center {
+        margin-top: -40px;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+        text-align: center
+}
+    </style>
+  </head>
+  <body>
+  <div class="center">
+    <h1>FAQ'S</h1>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="faq-inner">
+            <div class="faq-item">
+              {%for i in h%}
+              <h4>
+                {{i.faq_question}}
+                <span class="faq-plus">&plus;</span>
+              </h4>
+              <div class="faq-body">{{i.faq_answer}}</div>
+              <hr>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".faq-plus").on('click',function(){
+        $(this).parent().parent().find('.faq-body').slideToggle();
+      });
+    </script>
+  </body>
+</html>

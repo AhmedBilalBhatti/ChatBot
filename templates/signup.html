@@ -1,0 +1,211 @@
+{%load static%}
+<html>
+
+<head>
+  <title>Create a Account</title>
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/New%20login(style)1.css'%}"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min1.css'%}"> 	
+	<link rel="stylesheet" href="{% static 'css/style4.css'%}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+.footer {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  margin-left: 80px;
+  margin-top: 140px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+
+a.text-danger:hover, a.text-danger:focus {
+  color: #a71d2a !important;
+}
+a.text-light:hover, a.text-light:focus {
+  color: #cbd3da !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+a.text-dark:hover, a.text-dark:focus {
+  color: #121416 !important;
+}
+.ti-heart:before {
+	content: "\e634";
+}
+.ti-heart-broken:before {
+	content: "\e635";
+}
+.loginbox a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(252, 134, 0);
+}
+.heart {
+  color: red;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+        color: red;
+      }
+
+      ::-webkit-calendar-picker-indicator {
+        color: white; /* set the color of the icon */
+      }
+      ::placeholder {
+        color: white; /* set the color of the placeholder text */
+      }
+      @media (prefers-color-scheme: dark) {
+        ::-webkit-calendar-picker-indicator {
+          filter: invert(1); /* invert the color of the icon for devices with a dark color scheme */
+        }
+        ::placeholder {
+          color: gray; /* set the color of the placeholder text for devices with a dark color scheme */
+        }
+      }
+
+.logo{
+  margin-left: 130px;
+  margin-top: 21px;
+  margin-bottom: 68px;
+  scale: 1.5;
+}
+
+   @media (max-width: 768px) {
+    .loginbox {
+      width: 100%;
+      margin-left: 0;
+      padding: 0 15px;
+      }
+  }
+
+@media (max-width: 576px) {
+  .logo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    scale: 1.2;
+  }
+
+  .login-wrap {
+    padding: 30px;
+  }
+ }
+
+</style>
+
+<body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="{% static 'js/particles.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/app.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/particles.min.js'%}"></script>
+    <div class="loginbox">
+      <div class="logo">
+                              <img src="{% static 'images/logo-white.png'%}">
+                            </div>
+            <div class="col-md-50 col-lg-50">
+
+              <div class="login-wrap p-0">
+                <h2 class="heading-section mb-4 text-center">Signup</h2>
+                <h3 class="mb-4 text-center">Create a new Account</h3>
+              <form form method="POST" class="signin-form">
+		      		{% csrf_token %}
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Username" name="username" maxlength="25" required>
+		      		</div>
+
+
+
+		      		<div class="form-group">
+		      			<input type="email" class="form-control" placeholder="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="email" required>
+		      		</div>
+
+		      		<div class="form-group">
+  								<input type="date"  name= "date_of_birth" class="form-control" pattern="\d{2}-\d{2}-\d{4}" required min="1947-01-01">
+							</div>
+
+	            <div class="form-group">
+	              <input id="password-field" type="password" class="form-control" placeholder="Password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign up</button>
+	            </div>
+	            <div class="form-group d-md-flex">
+	            	<div class="w-50">
+		            	<label class="checkbox-wrap checkbox-primary">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+									</label>
+								</div>
+	            </div>
+	          </form>
+              <p class="w-100 text-center">&mdash; Already have a Account &mdash;</p>
+            <div class="social d-flex text-center">
+              <a href="{% url 'login'%}" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> LOGIN</a>
+                </div>
+                  </div>
+                    </div>
+                      <footer class="footer">
+                        <script>document.write('&copy; '+new Date().getFullYear())</script>, Made with&nbsp;<i class="text-danger">&hearts;</i>&nbsp;by&nbsp;<a href="https://www.instagram.com/i._.ahmedbilal_bhatti/">Ahmed Bilal Bhatti</a>
+                          </footer>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+<script>
+  $(document).ready(function(){
+    $('.toggle-password').click(function(){
+      $(this).toggleClass('fa-eye fa-eye-slash');
+      var input = $($(this).attr('toggle'));
+      if(input.attr('type') == 'password'){
+        input.attr('type', 'text');
+      } else {
+        input.attr('type', 'password');
+      }
+    });
+  });
+</script>
+  <script>
+function getIP() {
+  fetch("/get-ip")
+    .then(response => response.text())
+    .then(ip => {
+      // Use the obtained IP address as needed
+      console.log(ip);
+      // Pass the IP address to your Neo4j code or perform further actions
+      saveToNeo4j(ip);
+    })
+    .catch(error => {
+      console.error("Error fetching IP:", error);
+    });
+}
+
+function saveToNeo4j(ip) {
+  // Your Neo4j code to save the IP address
+  console.log("Saving IP to Neo4j:", ip);
+}
+  </script>
+</html>

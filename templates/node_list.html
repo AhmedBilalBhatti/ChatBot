@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Visualization</title>
+    <style>
+        #graph-container {
+            height: 1080px;
+        }
+        html {
+            background-color: #252525;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.2/cytoscape.min.js"></script>
+</head>
+<body>
+    <div id="graph-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nodes = {{ nodes|safe }};
+            var cy = cytoscape({
+                container: document.getElementById("graph-container"),
+                elements: {
+                    nodes: nodes.map(function(node) {
+                        return node.data;
+                    }),
+                },
+                style: [
+                    {
+                        selector: "node",
+                        style: {
+                            "background-color": "blue",
+                            "label": "data(ip)",
+                            "text-valign": "center",
+                            "text-halign": "center",
+                            "font-size": "7px",
+                            "width": "30px",
+                            "height": "30px"
+                        }
+                    }
+                ],
+                layout: {
+                    name: "grid"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
