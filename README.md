@@ -62,7 +62,8 @@ Then the graph would be like:
 ![11](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/b293a5ce-4a34-41c9-aaff-7d9480e9b76b)
 * It can also do analysis on your sentiments and can tell your ziodic sign.
   
-![7564](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/659b2990-1494-44fb-90fc-625da8ee4f26)
+![7564](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/b6a5d851-0b3d-43ab-8e8d-5e652c3f40e1)
+
 The above are some of the features of my chatbot I have not listed all as this is an Ai based chatbot and it is able to do many thing which I cannot list here because it would be lengthy but somehow for more reference I am adding some points here of which my Chabot is capable of:
 * Making social Network
 * Telling everything about user just by using its little information. Like(Gender, location, sign, birthday, age etc)
