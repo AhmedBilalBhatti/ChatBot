@@ -44,6 +44,7 @@ It contain this buttons which all are functional and have details of developer a
 ![123](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/df6a32bc-1abf-4d22-9e72-1ee42f74f638)
 # DataBase:
 This contain nodes every node contain different type data as seen in the pic and further nodes are linked with different relationships.
+
 ![45](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/277fbc07-30b8-4b8d-b01b-da91f48ae6bb)
 It makes its automatically developes its brain with user inputs by using nlp and AIML.
 * Like if user enter : I have a cat its color is white
