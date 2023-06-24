@@ -20,6 +20,7 @@ can be specially used for any business or organization assistant.
 I have used Neo4j a non SQL database in my project. It is a node(Graph) base Database.
 # FEATURES OF PROJECT:
 Some features of the Project are:
+
 ![1](https://github.com/AhmedBilalSSG/ChatBot/assets/110194946/672dfe52-62ef-475f-858b-8b951da57d7d)
 * Registration Module
 * Email Confirmation and Real time Trigger:
