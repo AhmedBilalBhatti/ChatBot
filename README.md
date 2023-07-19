@@ -3,8 +3,8 @@ This is a AIML chatbot which is using modern Technology of AI and Graph database
 # Introduction:
 This Project is the a full web base application of chatbot, which is totally made with Motivation
 and Inspiration with chatGPT, Kuki, Bard. Today Chabot has very wide scope in every field.
-Modern technology communication has turned the entire world into global village. With the
-improvement in Technologies and power of social media today people depend on these things
+Modern technology has turned the entire world into global village. With the
+improvement in Technologies today people depend on these things
 as they are needed in every aspect of their work and life. My project is not the entire
 application but I have tried my best to achieve maximum knowledge and to implement
 maximum technologies in my project. However to some extent I have achieved many thing in it.
