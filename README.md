@@ -7,7 +7,7 @@ Modern technology has turned the entire world into global village. With the
 improvement in Technologies today people depend on these things
 as they are needed in every aspect of their work and life. My project is not the entire
 application but I have tried my best to achieve maximum knowledge and to implement
-maximum technologies in my project. However to some extent I have achieved many thing in it
+maximum technologies in my project. However to some extent I have achieved many thing in it.
 # Purpose of Developing:
 The purpose of developing a chatbot is to create an interactive and engaging virtual assistant
 that can assist users in various tasks, provide information, and simulate conversations. By
